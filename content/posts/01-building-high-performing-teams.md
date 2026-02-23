@@ -2,7 +2,7 @@
 title: "Building High-Performing Teams: Practical Leadership Strategies"
 date: 2024-02-15
 category: "professional"
-draft: false
+draft: true
 ---
 
 Building a high-performing team is one of the most rewarding challenges in leadership. It requires intentionality, clear communication, and a genuine investment in your team members' growth.

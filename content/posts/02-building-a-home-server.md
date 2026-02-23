@@ -2,7 +2,7 @@
 title: "Building a Home Server: My Journey with Docker and Self-Hosting"
 date: 2024-02-10
 category: "geek"
-draft: false
+draft: true
 ---
 
 I finally took the plunge and built a home server. Here's what I learned along the way.

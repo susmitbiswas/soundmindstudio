@@ -2,7 +2,7 @@
 title: "Jazz Fusion Jam Session: Finding Flow in Collective Improvisation"
 date: 2024-02-05
 category: "artist"
-draft: false
+draft: true
 ---
 
 Last Saturday's jam session with the crew was one of those magical moments where everything clicked. Here's what happened and what I learned.
