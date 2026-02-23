@@ -1,0 +1,36 @@
+{{ define "nav" }}
+<nav class="floating-nav">
+    <div class="nav-container">
+        <a href="/" class="logo">{{ .Site.Title }}</a>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="professional">Professional</button>
+            <button class="filter-btn" data-filter="geek">Geek</button>
+            <button class="filter-btn" data-filter="artist">Artist</button>
+        </div>
+    </div>
+</nav>
+{{ end }}
+
+{{ define "content" }}
+<div class="hero">
+    <h1 class="hero-title">{{ .Site.Title }}</h1>
+    <p class="hero-subtitle">{{ .Site.Params.description }}</p>
+</div>
+
+<div class="posts-container">
+    {{ range .Site.RegularPages }}
+        {{ if eq .Type "posts" }}
+            <article class="post-card" data-category="{{ .Params.category }}">
+                <div class="post-header">
+                    <span class="post-category">{{ .Params.category | title }}</span>
+                    <time class="post-date">{{ .Date.Format "Jan 2, 2006" }}</time>
+                </div>
+                <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                <p class="post-excerpt">{{ .Summary }}</p>
+                <a href="{{ .Permalink }}" class="read-more">Read More →</a>
+            </article>
+        {{ end }}
+    {{ end }}
+</div>
+{{ end }}

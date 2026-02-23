@@ -1,0 +1,17 @@
+baseURL = "https://susmit.me/"
+languageCode = "en-us"
+title = "Susmit Biswas"
+theme = "susmit-custom"
+paginate = 10
+
+[params]
+  author = "Susmit Biswas"
+  description = "Professional insights, creative projects, and technical explorations"
+
+  # Color scheme
+  primaryColor = "#1a4d6d"
+  accentColor = "#ff6b5b"
+  backgroundColor = "#f9f7f5"
+
+[outputs]
+  home = ["HTML", "JSON"]
