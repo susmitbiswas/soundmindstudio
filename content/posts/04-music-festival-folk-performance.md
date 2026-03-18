@@ -1,8 +1,8 @@
 ---
 title: "From Sunday Rehearsals to the Stage: Our Music Festival Journey"
 date: 2026-02-15
-category: "music"
-draft: true
+category: "creative"
+draft: false
 ---
 
 ![Bay Area Bengali Music Festival – Folk Segment, February 15](/images/bay-area-bengali-music-festival.jpg)

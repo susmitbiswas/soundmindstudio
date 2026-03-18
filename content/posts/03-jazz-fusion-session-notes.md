@@ -1,7 +1,7 @@
 ---
 title: "Jazz Fusion Jam Session: Finding Flow in Collective Improvisation"
 date: 2024-02-05
-category: "artist"
+category: "creative"
 draft: true
 ---
 
