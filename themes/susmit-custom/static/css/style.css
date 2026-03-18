@@ -277,6 +277,16 @@ a:hover {
   color: var(--text-dark);
 }
 
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+}
+
 .post-content h2 {
   margin: 2rem 0 1rem;
   color: var(--primary);
