@@ -27,7 +27,7 @@
                     <time class="post-date">{{ .Date.Format "Jan 2, 2006" }}</time>
                 </div>
                 <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                <p class="post-excerpt">{{ .Summary }}</p>
+                <p class="post-excerpt">{{ .Summary | plainify | truncate 160 }}</p>
                 <a href="{{ .Permalink }}" class="read-more">Read More →</a>
             </article>
         {{ end }}
