@@ -14,4 +14,4 @@ paginate = 10
   backgroundColor = "#f9f7f5"
 
 [outputs]
-  home = ["HTML", "JSON"]
+  home = ["HTML", "JSON", "RSS"]
