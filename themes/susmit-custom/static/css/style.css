@@ -341,6 +341,14 @@ a:hover {
   margin-top: 4rem;
 }
 
+.footer a {
+  color: var(--white);
+}
+
+.footer a:hover {
+  color: var(--accent);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-container {
