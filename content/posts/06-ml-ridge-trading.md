@@ -47,7 +47,7 @@ The new approach:
 
 1. **Raw features only** — 20 of them, spanning multi-timeframe returns, RSI, MACD, volume ratios, volatility, and sector context. No piecewise mappings. No coddling.
 
-2. **QuantileTransformer** — converts each feature to its percentile rank within the training window. A 5% monthly return means different things in a bull market vs a crash. Now the model doesn't care.
+2. **Percentile normalization** — converts each feature to its percentile rank within the training window. A 5% monthly return means different things in a bull market vs a crash. Now the model doesn't care.
 
 3. **Walk-forward validation** — 25 out-of-sample test windows over 15 years of data. The model never touches future data. No cheating. This is how you find out if something actually works versus if you accidentally memorized the test answers.
 
@@ -67,13 +67,13 @@ The blue line is the "improved" linear composite — I had actually made some tu
 
 ## The One Thing Missing (And Why It's Fine)
 
-The intermediate linear system I created yesterday included a VADER sentiment score from news headlines, weighted at 15%. It's a genuinely useful signal — stocks getting positive coverage tend to have short-term tailwinds.
+The intermediate linear system I created yesterday included a sentiment score from news headlines, weighted at 15%. It's a genuinely useful signal — stocks getting positive coverage tend to have short-term tailwinds.
 
 The ML model doesn't have it.
 
-Why? Because yfinance doesn't provide historical headlines. I can't backtest what I can't retrieve. Training on fabricated sentiment signals would just teach the model to be confidently wrong in a new and interesting way.
+Why? Because my market data provider doesn't provide historical headlines. I can't backtest what I can't retrieve. Training on fabricated sentiment signals would just teach the model to be confidently wrong in a new and interesting way.
 
-So instead, my `news_eval.py` script has been quietly accumulating real headline sentiment data since yesterday — one row per ticker per day, with actual forward returns. In about two weeks there will be enough data to measure whether news actually predicts anything in my specific universe. If the IC is positive, I'll add it to the ML model and retrain. If not, I'll leave it out and accept that the finance Twitter consensus is occasionally wrong.
+So instead, I've been quietly accumulating real headline sentiment data — one row per ticker per day, with actual forward returns. In about two weeks there will be enough data to measure whether news actually predicts anything in my specific universe. If the IC is positive, I'll add it to the ML model and retrain. If not, I'll leave it out and accept that the finance Twitter consensus is occasionally wrong.
 
 This is, in my opinion, the correct way to do things. The fact that it took me a couple of weeks to get here is a separate conversation.
 

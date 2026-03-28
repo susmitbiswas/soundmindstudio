@@ -56,7 +56,7 @@ I'm not going to tell you which letter is which model yet, because we're still i
 
 **The very sophisticated models ended up in the middle of the pack.** Gradient boosters, probabilistic models, a stacked meta-learner — all reasonably good. None of them embarrassed themselves. None of them ran away with the trophy either. The market is noisy enough that brute-force complexity doesn't help as much as you'd expect.
 
-**One model (M) is indistinguishable from random.** IC of 0.002 and Sharpe of 0.009. This one is a newer variant of LightGBM that I had high hopes for. The market simply does not reward the particular bet it makes. This is useful information.
+**One model (M) is indistinguishable from random.** IC of 0.002 and Sharpe of 0.009. This one is a newer gradient boosting variant that I had high hopes for. The market simply does not reward the particular bet it makes. This is useful information.
 
 ## The Part Where I Don't Trust My Own Results
 
