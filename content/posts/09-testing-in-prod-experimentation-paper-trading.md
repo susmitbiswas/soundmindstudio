@@ -1,6 +1,6 @@
 ---
 title: "I've Been Testing in Prod With Real Money. On Purpose. By Accident."
-date: 2026-03-28
+date: 2026-03-28T08:00:00-07:00
 category: "geek"
 draft: false
 ---
