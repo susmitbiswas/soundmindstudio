@@ -82,3 +82,5 @@ Better late than expensive. Well — more expensive.
 ---
 
 *Disclaimer: This is still not financial advice. This is a software engineer confessing to professional malpractice against his own money and then describing the remediation plan. The systems described here are experimental and personal. The experimentation framework exists because the author cannot be trusted to deploy untested changes responsibly. Please consult an actual financial professional before making investment decisions. Especially if you, like me, are prone to forgetting your own best practices.*
+
+**Next up:** The system scored 9.9 out of 10. Now I just have to not break it. [My Trading Bot Scored 9.9 Out of 10. Now It Just Has to Keep Not Blowing Up. →](/posts/10-finbot-the-system-is-the-product/)
