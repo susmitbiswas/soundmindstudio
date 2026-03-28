@@ -13,5 +13,10 @@ paginate = 10
   accentColor = "#ff6b5b"
   backgroundColor = "#f9f7f5"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [outputs]
   home = ["HTML", "JSON", "RSS"]
