@@ -3,16 +3,55 @@
     <div class="nav-container">
         <a href="/" class="logo">{{ .Site.Title }}</a>
         <div class="filter-buttons">
-            <button class="filter-btn" data-filter="all"><a href="/">← Back to Posts</a></button>
+            <button class="filter-btn"><a href="/">← Back to Posts</a></button>
+            <div class="post-dropdown">
+                <button class="filter-btn dropdown-toggle">All Posts ▾</button>
+                <div class="dropdown-menu">
+                    {{ range where (where .Site.RegularPages "Type" "posts") ".Draft" false }}
+                    <a href="{{ .Permalink }}" class="dropdown-item{{ if eq $.Permalink .Permalink }} active{{ end }}">
+                        <span class="dropdown-category">{{ .Params.category | title }}</span>
+                        {{ .Title }}
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
         </div>
     </div>
 </nav>
 {{ end }}
 
 {{ define "content" }}
+{{/* Compute prev/next within same category */}}
+{{ $category := .Params.category }}
+{{ $categoryPages := where (where (where .Site.RegularPages "Type" "posts") ".Draft" false) ".Params.category" $category }}
+{{ $prev := false }}
+{{ $next := false }}
+{{ range $i, $p := $categoryPages }}
+    {{ if eq $.Permalink $p.Permalink }}
+        {{ if gt $i 0 }}
+            {{ $next = index $categoryPages (sub $i 1) }}
+        {{ end }}
+        {{ if lt (add $i 1) (len $categoryPages) }}
+            {{ $prev = index $categoryPages (add $i 1) }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
 <article class="single-post">
     <header class="post-header-single">
-        <span class="post-category-single">{{ .Params.category | title }}</span>
+        <div class="post-header-top">
+            <span class="post-category-single">{{ .Params.category | title }}</span>
+            {{ if or $prev $next }}
+            <nav class="post-nav">
+                {{ with $prev }}
+                <a href="{{ .Permalink }}" class="post-nav-link prev">← Previous</a>
+                {{ end }}
+                {{ with $next }}
+                <a href="{{ .Permalink }}" class="post-nav-link next">Next →</a>
+                {{ end }}
+            </nav>
+            {{ end }}
+        </div>
         <h1>{{ .Title }}</h1>
         <time class="post-date-single">{{ .Date.Format "January 2, 2006" }}</time>
     </header>
@@ -20,5 +59,18 @@
     <div class="post-content">
         {{ .Content }}
     </div>
+
+    {{ if or $prev $next }}
+    <footer class="post-footer-nav">
+        <nav class="post-nav">
+            {{ with $prev }}
+            <a href="{{ .Permalink }}" class="post-nav-link prev">← Previous</a>
+            {{ end }}
+            {{ with $next }}
+            <a href="{{ .Permalink }}" class="post-nav-link next">Next →</a>
+            {{ end }}
+        </nav>
+    </footer>
+    {{ end }}
 </article>
 {{ end }}
