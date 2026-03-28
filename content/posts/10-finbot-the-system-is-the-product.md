@@ -134,6 +134,8 @@ Not in the vague "AI-assisted" way that means you used autocomplete. In the real
 
 The version of me from two years ago would have taken six months to build what I built in weeks. Not because the code is simple — it isn't — but because the feedback loop between "I have an idea" and "I have a working implementation" has collapsed from days to hours.
 
+I know there's a lot of anxiety about AI right now — that it's coming for jobs, that it's making us dumber, that we're outsourcing our thinking to a machine and won't notice until it's too late. I get it. Those concerns aren't irrational. But my experience has been the opposite. I've *thought more* during this project, not less. I've learned a new domain, questioned my own assumptions, rebuilt systems from scratch when the data told me I was wrong. The AI didn't do that for me. It made it possible for me to do it *faster* — fast enough that I could iterate in weeks instead of giving up after month one.
+
 The AI doesn't replace the thinking. It accelerates the iteration. And in a domain like trading, where every iteration teaches you something about the market, faster iteration means faster learning.
 
 I'm still the one making the decisions. The AI is still the one saying things like "your system handles the next problem on its own" with a confidence that makes me slightly nervous. But the collaboration has been genuine, and the results speak for themselves.
