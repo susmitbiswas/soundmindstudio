@@ -120,3 +120,5 @@ I'll be here when it arrives. Probably with my coffee going cold again.
 ---
 
 *Disclaimer: Still not financial advice. This is a software engineer writing about his trading bot's growing pains. The system described here is experimental, personal, and has demonstrably lost money. Thursday proved that. Please consult an actual financial professional before making investment decisions based on anything you read here — or frankly anywhere on the internet.*
+
+**Next up:** After the crash, I finally built the thing I should have had from the start — a proper experimentation framework. [I've Been Testing in Prod With Real Money. On Purpose. By Accident. →](/posts/09-testing-in-prod-experimentation-paper-trading/)

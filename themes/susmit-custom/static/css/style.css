@@ -513,5 +513,11 @@ a:hover {
 .post-comments h2 {
   font-size: 1.3rem;
   color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.comments-cta {
+  color: var(--text-light);
+  font-size: 0.9rem;
   margin-bottom: 1.5rem;
 }

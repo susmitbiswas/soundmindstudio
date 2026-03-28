@@ -77,3 +77,5 @@ Would my day-trading friends approve? Probably not — it's not flashy enough. B
 ---
 
 *Disclaimer: This post describes a personal side project for educational purposes. Nothing here is financial advice. Don't build trading bots and then blame me. Actually, maybe don't build trading bots at all. I'm a software person pretending to understand markets — act accordingly.*
+
+**Next up:** The bot worked, but was it actually *good*? I measured it. The answer was humbling. [My Trading Bot Was a Masterpiece — Of Doing Everything Wrong →](/posts/06-ml-ridge-trading/)

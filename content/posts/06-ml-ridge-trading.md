@@ -98,3 +98,5 @@ A non-exhaustive list, in ascending order of embarrassment:
 ---
 
 *Disclaimer: Still not financial advice. The system now loses money in a more statistically principled way. Consult a professional. Don't do this. I am a software person with an unreasonable tolerance for self-inflicted complexity — act accordingly.*
+
+**Next up:** One ML model wasn't enough. I pitted 13 algorithms against each other to find the best one. [I Made My Trading Bot Try 13 Different Brains →](/posts/07-ml-algorithm-horse-race/)

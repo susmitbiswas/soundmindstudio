@@ -89,3 +89,5 @@ I am cautiously, irrationally, completely unreasonably optimistic.
 ---
 
 *Disclaimer: This remains not financial advice. I am a software person who runs backtests and pretends to understand what he sees. Model A is not a promise — it's a hypothesis with good credentials. Act accordingly, and please consult an actual financial professional before you do anything I describe here.*
+
+**Next up:** The optimism didn't last long. Thursday happened. [My Trading Bot Made 10%. Then Lost 10%. Then I Fixed the Brakes →](/posts/08-finbot-crash-postmortem/)
