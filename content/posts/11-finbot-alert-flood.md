@@ -49,7 +49,7 @@ regime_label = regime_ctx.get("regime", "UNKNOWN")
 # SGOV held + not in_regime → triggers SELL
 ```
 
-The safety mechanism that was supposed to protect a $14,865 position was returning "UNKNOWN" regime on every run and concluding that the T-bills should be sold. The premarket run had been fine because there was no SGOV at the time. Every run after the SGOV purchase quietly generated a bad recommendation.
+The safety mechanism that was supposed to protect a meaningful T-bill position was returning "UNKNOWN" regime on every run and concluding that the T-bills should be sold. The premarket run had been fine because there was no SGOV at the time. Every run after the SGOV purchase quietly generated a bad recommendation.
 
 A broken function wearing the costume of a working one.
 
