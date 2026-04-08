@@ -118,3 +118,5 @@ They're a small number. They represent a large surface area of things that could
 *Disclaimer: This is a software engineer writing about his personal trading system, not financial advice. The bugs described here were real. The fixes described here were also real. The fact that I had tests passing against broken safety logic for months is exactly as uncomfortable to admit as it sounds. Trade responsibly, test defensively, and always check what your fallback actually does.*
 
 **← Previously:** [FinBot: The System Is the Product](/posts/10-finbot-the-system-is-the-product/)
+
+**Next up:** I built a dictation app to avoid $10/month, then spent a week making it not terrible. [I Built a Dictation App to Avoid Paying $10/Month. Then I Spent a Week Making It Not Terrible. →](/posts/12-mywispr-tuning/)
