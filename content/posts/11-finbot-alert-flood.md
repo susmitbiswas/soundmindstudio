@@ -21,7 +21,7 @@ There's a song. It goes like this:
 
 If you worked in tech between roughly 2014 and 2022, you may have just felt something move in your chest. That is the PagerDuty alert jingle — sung to the tune of "Frère Jacques" (or "Bruder Jakob," its German counterpart, a centuries-old canon that somehow became the musical backbone of engineering trauma). It's cheerful. It is chirpy. It wakes you up at 3am and it doesn't stop until you acknowledge it.
 
-I worked at Uber. My first team was heavily on-call. I once got paged from Hawaii. Not figuratively — I was literally on vacation, sitting on a beach, and my phone started screaming the PagerDuty song. I closed my laptop, waded back out, and fixed it. That's what you do.
+I worked at Uber. My first team was heavily on-call. I once got paged from Hawaii. Not figuratively — I was literally on vacation, sitting on a beach, and my phone started screaming the PagerDuty song. I wasn't primary on-call. I wasn't even secondary. But being the domain expert has a price: when something breaks in your area and nobody else can untangle it fast enough, the rotation doesn't matter. I closed my laptop, waded back out, and fixed it. That's what you do.
 
 Yesterday, my Telegram got approximately 400 alerts. My trading system, FinBot, decided that one day was a good day to surface every latent failure it had been quietly sitting on. And because of everything Uber burned into me, I did not mute the notifications. I did not go for a walk. I opened a session and worked through every one of them.
 
