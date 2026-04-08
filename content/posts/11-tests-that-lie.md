@@ -1,6 +1,6 @@
 ---
 title: "My Tests Were Green. My Safety Checks Were Broken. Both Were True at the Same Time."
-date: 2026-04-08T09:00:00-07:00
+date: 2026-04-08T00:00:00-07:00
 category: "geek"
 draft: false
 ---
