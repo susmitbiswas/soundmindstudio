@@ -5,6 +5,8 @@ category: "geek"
 draft: false
 ---
 
+![A banana with headphones, a stopwatch, and three tiny race cars on a desk — measuring before optimizing](/images/banana-listens.png)
+
 There is a $10/month dictation app called Wispr Flow that is very good. It runs locally on Apple Silicon, it types your words into whatever app you're using, and it costs $10 a month.
 
 I refuse to pay it.
