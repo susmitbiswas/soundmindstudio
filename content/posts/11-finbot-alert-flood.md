@@ -7,10 +7,17 @@ draft: false
 
 There's a song. It goes like this:
 
-*Something's broken, something's broken*
-*It's your fault, it's your fault*
-*Are you gonna fix it, are you gonna fix it*
-*Right away, right away*
+*Something's broken,*
+*something's broken.*
+
+*It's your fault,*
+*it's your fault.*
+
+*Are you gonna fix it,*
+*are you gonna fix it*
+
+*Right away,*
+*right away...*
 
 If you worked in tech between roughly 2014 and 2022, you may have just felt something move in your chest. That is the PagerDuty alert jingle — sung to the tune of "Frère Jacques" (or "Bruder Jakob," its German counterpart, a centuries-old canon that somehow became the musical backbone of engineering trauma). It's cheerful. It is chirpy. It wakes you up at 3am and it doesn't stop until you acknowledge it.
 
