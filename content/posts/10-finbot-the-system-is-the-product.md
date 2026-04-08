@@ -206,4 +206,4 @@ I'll be back when something breaks. Or when something beautiful happens. In trad
 5. *[I've Been Testing in Prod With Real Money. On Purpose. By Accident.](/posts/09-testing-in-prod-experimentation-paper-trading/)*
 6. *[My Trading Bot Scored 9.9 Out of 10. Now It Just Has to Keep Not Blowing Up.](/posts/10-finbot-the-system-is-the-product/) (this post)*
 
-**Next up:** The 9.9 scorecard didn't mean the safety mechanisms were actually safe. [My Tests Were Green. My Safety Checks Were Broken. Both Were True at the Same Time. →](/posts/11-tests-that-lie/)
+**Next up:** Then the market crashed and 400 Telegram alerts showed up. [My Phone Got 400 Alerts Yesterday. I Have Uber to Thank for Why I Actually Fixed Them. →](/posts/11-finbot-alert-flood/)
