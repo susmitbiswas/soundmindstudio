@@ -1,17 +1,19 @@
 ---
-title: "I Used to Build CPU Simulators at AMD. Twenty Years Later, the Same Trick Made My Dictation App Feel Instant."
+title: "I Used to Work on Designing Microprocessors at AMD. A Decade Later, the Same Trick Made My Dictation App Feel Instant."
 date: 2026-04-08
 category: "geek"
 draft: false
 ---
 
+![A banana engineer in a hard hat, pointing at a factory assembly line with three stations: RECORD, WHISPER, CLAUDE](/images/banana-pipeline.png)
+
 There's a concept in computer architecture called throughput. It's different from latency, and the distinction matters more than most people realize until they've sat with a slow pipeline long enough to get annoyed.
 
-Latency is how long one thing takes. Throughput is how much work you can push through in a given window of time. These are related but not the same, and optimizing for one does not automatically improve the other. I spent a decent chunk of my career at AMD understanding this distinction in the context of cycle-accurate CPU modeling — building simulators that could track every instruction through every pipeline stage, identifying where stalls happened and why.
+Latency is how long one thing takes. Throughput is how much work you can push through in a given window of time. These are related but not the same, and optimizing for one does not automatically improve the other. I spent a decent chunk of my career at AMD understanding this distinction in the context of cycle-accurate CPU modeling and designing microprocessors — building simulators that could track every instruction through every pipeline stage, identifying where stalls happened and why.
 
 That was a while ago. Before the current AI moment. Before LLMs, before Apple Silicon, before any of this.
 
-Last night, the same mental model I used on CPUs made my dictation app feel seamless.
+Today, the same mental model I used on CPUs made my dictation app feel seamless.
 
 ## What Was Slow and Why
 
@@ -116,7 +118,7 @@ But when you're in a flow state, thinking out loud, speaking in chunks? The 3-se
 
 ## The AMD Connection
 
-I worked on cycle-accurate models before any of this AI wave existed. The work was unglamorous and deeply technical: write software that simulates a CPU at the clock cycle level, make sure every instruction follows the right path through every pipeline stage, identify where stalls happen, figure out whether it's a cache miss or a branch misprediction or a structural hazard.
+I worked on cycle-accurate models before any of this AI wave existed. The work was unglamorous and deeply technical: write software that simulates a CPU at the clock cycle level, make sure every instruction follows the right path through every pipeline stage, identify where stalls happen, figure out whether it's a cache miss or a branch misprediction or a structural hazard. Okay, it was not unglamarous. I worked on branch prediction, decode, instruction cache sections in Ryzen/Zen 1st gen microprocessor and it was truly exciting stuff to make a transformation!
 
 The core insight from that work is that latency and throughput are separate problems. You optimize them with different tools. Latency is about making individual things faster. Throughput is about keeping more things in flight simultaneously.
 
