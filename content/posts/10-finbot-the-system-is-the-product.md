@@ -205,3 +205,5 @@ I'll be back when something breaks. Or when something beautiful happens. In trad
 4. *[My Trading Bot Made 10%. Then Lost 10%. Then I Fixed the Brakes](/posts/08-finbot-crash-postmortem/)*
 5. *[I've Been Testing in Prod With Real Money. On Purpose. By Accident.](/posts/09-testing-in-prod-experimentation-paper-trading/)*
 6. *[My Trading Bot Scored 9.9 Out of 10. Now It Just Has to Keep Not Blowing Up.](/posts/10-finbot-the-system-is-the-product/) (this post)*
+
+**Next up:** The 9.9 scorecard didn't mean the safety mechanisms were actually safe. [My Tests Were Green. My Safety Checks Were Broken. Both Were True at the Same Time. →](/posts/11-tests-that-lie/)
