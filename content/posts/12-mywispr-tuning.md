@@ -125,6 +125,30 @@ with _mlx_lock:
 
 One lock. Both crashes gone. The GPU now politely waits its turn.
 
+### Attempt 6: The Model Race
+
+After the GPU crash was fixed, I got curious about whether I was using the right Whisper model. So I added a mode that runs three models in parallel on every clip and prints a race table — large-v3-turbo, distil-whisper-large-v3, and whisper-medium — with their times and a truncated transcript snippet.
+
+Four clips in, the race produced this:
+
+```
+━━━ Model Race ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  whisper-large-v3-turbo   3889ms  "...protecting your components. Tech enthusi" ◀ primary
+  distil-whisper-large-v3  3586ms  "...protecting your components. D**k enthusi"
+  whisper-medium           3000ms  "...protecting your components. Tech enthusi"
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+Yes. Distil-whisper heard "Tech enthusiast" and transcribed it as something else. Not a slur, not a crash, just a phonetically adjacent word that would have been pasted into whatever I had open at the time, at full confidence, with no indication anything had gone wrong.
+
+My Claude Code session's reaction was immediate and accurate:
+
+> *"The critical finding in clip 4: distil transcribed 'D\*\*k enthusiast' instead of 'Tech enthusiast'. That's a hard disqualifier for a dictation tool."*
+
+It is. A dictation tool that occasionally replaces "Tech" with something a HR department would find interesting is not a dictation tool I can use at work. Distil-whisper eliminated itself from the race in one clip.
+
+Whisper-medium, for the record, was actually fastest across all four clips and got everything right. I'm still evaluating.
+
 ## The Things That Actually Worked
 
 ### Keep the TCP Connection Alive
@@ -179,7 +203,7 @@ The total cost remains firmly under a cent for most days of use. I have checked 
 
 **Thread safety is the kind of thing you learn the hard way.** GPU concurrency bugs don't throw clean exceptions. They throw SIGSEGV and then your menu bar icon disappears and you're reading crash logs wondering what happened. The lock is obvious in retrospect and invisible until the first crash.
 
-**The "fast" version of a thing sometimes isn't.** Distil-whisper, which I also tested, is advertised as significantly faster than large-v3-turbo. On Apple Silicon, for 1-3 sentence clips, the difference was about 0.3 seconds. Not worth the quality regression. The platform matters.
+**A model race is worth running.** Distil-whisper looked great on paper — faster, same architecture. It was eliminated in four clips by transcribing "Tech enthusiast" as something you cannot send to a colleague. Speed doesn't matter if the output requires a content warning. Run the race with real data before committing.
 
 **Bias is free.** The initial_prompt fix for technical vocabulary cost nothing and made a real difference. There's a general version of this lesson: sometimes the cheapest fix is telling the model what you want instead of paying for a bigger model that already knows.
 
