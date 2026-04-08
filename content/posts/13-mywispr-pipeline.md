@@ -1,6 +1,6 @@
 ---
 title: "I Used to Work on Designing Microprocessors at AMD. A Decade Later, the Same Trick Made My Dictation App Feel Instant."
-date: 2026-04-08
+date: 2026-04-08T15:00:00-07:00
 category: "geek"
 draft: false
 ---
