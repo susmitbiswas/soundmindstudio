@@ -5,6 +5,8 @@ category: "geek"
 draft: false
 ---
 
+![A banana in pajamas, bolt upright at 3am, phone glowing with hundreds of Telegram alerts](/images/telegram-banana.png)
+
 There's a song. It goes like this:
 
 *Something's broken,*
