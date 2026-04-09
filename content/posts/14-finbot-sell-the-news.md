@@ -126,8 +126,6 @@ For now: the system is running FinBERT in production. Haiku-v2 is in the lab. Th
 
 *← Previously: [My Phone Got 400 Alerts Yesterday. I Have Uber to Thank for Why I Actually Fixed Them.](/posts/11-finbot-alert-flood/)*
 
-*← And before that: [I Used to Work on Designing Microprocessors at AMD. A Decade Later, the Same Trick Made My Dictation App Feel Instant.](/posts/13-mywispr-pipeline/)*
-
 ---
 
 *Disclaimer: None of this is financial advice. Please do not build a trading system based on anything in this post and then blame me when it loses money. FinBERT's +7.86% quintile P&L is a 55-day backtest result, not a promise. The market will find new ways to be wrong about itself, and I will be there, updating prompts, re-running backtests, and writing about it.*
