@@ -1,6 +1,6 @@
 ---
 title: "I Taught My Bot to Read Good News. The Stocks Went Down. I Have Questions."
-date: 2026-04-09T18:00:00-07:00
+date: 2026-04-09T07:30:00-07:00
 category: "geek"
 series: "finbot"
 draft: false
