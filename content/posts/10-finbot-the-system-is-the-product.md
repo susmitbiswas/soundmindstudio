@@ -2,6 +2,7 @@
 title: "My Trading Bot Scored 9.9 Out of 10. Now It Just Has to Keep Not Blowing Up."
 date: 2026-03-28T13:30:00-07:00
 category: "geek"
+series: "finbot"
 draft: false
 ---
 

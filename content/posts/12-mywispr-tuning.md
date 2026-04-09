@@ -2,6 +2,7 @@
 title: "I Built a Dictation App to Avoid Paying $10/Month. Then I Spent a Week Making It Not Terrible."
 date: 2026-04-08T01:00:00-07:00
 category: "geek"
+series: "mywispr"
 draft: false
 ---
 

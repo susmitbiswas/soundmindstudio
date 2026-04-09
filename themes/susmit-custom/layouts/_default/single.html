@@ -21,18 +21,45 @@
 {{ end }}
 
 {{ define "content" }}
-{{/* Compute prev/next within same category */}}
-{{ $category := .Params.category }}
-{{ $categoryPages := where (where (where .Site.RegularPages "Type" "posts") ".Draft" false) ".Params.category" $category }}
+{{ $series := .Params.series }}
 {{ $prev := false }}
 {{ $next := false }}
-{{ range $i, $p := $categoryPages }}
-    {{ if eq $.Permalink $p.Permalink }}
-        {{ if gt $i 0 }}
-            {{ $next = index $categoryPages (sub $i 1) }}
+
+{{ if $series }}
+    {{/* Series-aware prev/next — chronological order within series */}}
+    {{ $seriesPages := where (where (where .Site.RegularPages "Type" "posts") ".Draft" false) ".Params.series" $series }}
+    {{ $seriesChron := $seriesPages.Reverse }}
+    {{ range $i, $p := $seriesChron }}
+        {{ if eq $.Permalink $p.Permalink }}
+            {{ if gt $i 0 }}
+                {{ $prev = index $seriesChron (sub $i 1) }}
+            {{ end }}
+            {{ if lt (add $i 1) (len $seriesChron) }}
+                {{ $next = index $seriesChron (add $i 1) }}
+            {{ end }}
         {{ end }}
-        {{ if lt (add $i 1) (len $categoryPages) }}
-            {{ $prev = index $categoryPages (add $i 1) }}
+    {{ end }}
+
+    {{/* Other series discovery — first post chronologically */}}
+    {{ $otherSeries := cond (eq $series "finbot") "mywispr" "finbot" }}
+    {{ $otherSeriesName := cond (eq $otherSeries "finbot") "FinBot" "MyWispr" }}
+    {{ $otherPages := where (where (where .Site.RegularPages "Type" "posts") ".Draft" false) ".Params.series" $otherSeries }}
+    {{ $otherFirst := false }}
+    {{ if $otherPages }}
+        {{ $otherFirst = index ($otherPages.Reverse) 0 }}
+    {{ end }}
+{{ else }}
+    {{/* Category-based prev/next for non-series posts */}}
+    {{ $category := .Params.category }}
+    {{ $categoryPages := where (where (where .Site.RegularPages "Type" "posts") ".Draft" false) ".Params.category" $category }}
+    {{ range $i, $p := $categoryPages }}
+        {{ if eq $.Permalink $p.Permalink }}
+            {{ if gt $i 0 }}
+                {{ $next = index $categoryPages (sub $i 1) }}
+            {{ end }}
+            {{ if lt (add $i 1) (len $categoryPages) }}
+                {{ $prev = index $categoryPages (add $i 1) }}
+            {{ end }}
         {{ end }}
     {{ end }}
 {{ end }}
@@ -40,7 +67,13 @@
 <article class="single-post">
     <header class="post-header-single">
         <div class="post-header-top">
-            <span class="post-category-single">{{ .Params.category | title }}</span>
+            <span class="post-category-single">
+                {{ .Params.category | title }}
+                {{ with $series }}
+                    {{ if eq . "finbot" }} · FinBot series{{ end }}
+                    {{ if eq . "mywispr" }} · MyWispr series{{ end }}
+                {{ end }}
+            </span>
             {{ if or $prev $next }}
             <nav class="post-nav">
                 {{ with $prev }}
@@ -71,6 +104,25 @@
             {{ end }}
         </nav>
     </footer>
+    {{ end }}
+
+    {{ if $series }}
+    {{ $otherSeries := cond (eq $series "finbot") "mywispr" "finbot" }}
+    {{ $otherSeriesName := cond (eq $otherSeries "finbot") "FinBot" "MyWispr" }}
+    {{ $otherPages := where (where (where .Site.RegularPages "Type" "posts") ".Draft" false) ".Params.series" $otherSeries }}
+    {{ if $otherPages }}
+    {{ $otherFirst := index ($otherPages.Reverse) 0 }}
+    <aside class="series-discovery">
+        <p class="series-discovery-label">Also from the geek desk</p>
+        <div class="series-discovery-content">
+            <span class="series-discovery-name">{{ $otherSeriesName }}</span>
+            <a href="{{ $otherFirst.Permalink }}" class="series-discovery-link">
+                {{ $otherFirst.Title }}
+            </a>
+            <a href="{{ $otherFirst.Permalink }}" class="series-discovery-cta">Start reading →</a>
+        </div>
+    </aside>
+    {{ end }}
     {{ end }}
 
     <section class="post-comments">

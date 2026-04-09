@@ -2,6 +2,7 @@
 title: "I Let AI Manage My Money Because I'm Terrible At It (A Cautionary Tale That Somehow Worked)"
 date: 2026-03-18
 category: "geek"
+series: "finbot"
 draft: false
 ---
 

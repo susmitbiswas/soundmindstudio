@@ -2,6 +2,7 @@
 title: "My Phone Got 400 Alerts Yesterday. I Have Uber to Thank for Why I Actually Fixed Them."
 date: 2026-04-07T10:00:00-07:00
 category: "geek"
+series: "finbot"
 draft: false
 ---
 

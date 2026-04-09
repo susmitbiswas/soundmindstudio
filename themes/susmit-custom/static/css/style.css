@@ -372,6 +372,64 @@ a:hover {
   justify-content: flex-end;
 }
 
+/* Series Discovery Card */
+.series-discovery {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  background: var(--white);
+}
+
+.series-discovery-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.series-discovery-content {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.series-discovery-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.series-discovery-link {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.series-discovery-link:hover {
+  color: var(--primary);
+}
+
+.series-discovery-cta {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--primary);
+  white-space: nowrap;
+}
+
+.series-discovery-cta:hover {
+  color: var(--accent);
+}
+
 /* Post Dropdown */
 .post-dropdown {
   position: relative;

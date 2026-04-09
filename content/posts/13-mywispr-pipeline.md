@@ -2,6 +2,7 @@
 title: "I Used to Work on Designing Microprocessors at AMD. A Decade Later, the Same Trick Made My Dictation App Feel Instant."
 date: 2026-04-08T02:00:00-07:00
 category: "geek"
+series: "mywispr"
 draft: false
 ---
 

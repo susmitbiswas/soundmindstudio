@@ -2,6 +2,7 @@
 title: "My Trading Bot Made 10%. Then Lost 10%. Then I Fixed the Brakes."
 date: 2026-03-27
 category: "geek"
+series: "finbot"
 draft: false
 ---
 

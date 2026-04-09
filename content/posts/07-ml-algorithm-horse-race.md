@@ -2,6 +2,7 @@
 title: "I Made My Trading Bot Try 13 Different Brains. One of Them Is Suspiciously Good."
 date: 2026-03-24
 category: "geek"
+series: "finbot"
 draft: false
 ---
 

@@ -2,6 +2,7 @@
 title: "My Trading Bot Was a Masterpiece — Of Doing Everything Wrong"
 date: 2026-03-19
 category: "geek"
+series: "finbot"
 draft: false
 ---
 
