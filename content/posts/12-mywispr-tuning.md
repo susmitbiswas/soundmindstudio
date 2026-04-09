@@ -216,6 +216,4 @@ The total cost remains firmly under a cent for most days of use. I have checked 
 
 *MyWispr is a personal project and is not open source, mainly because it currently has my vocabulary hardcoded into it and I'm not sure "Claude, Anthropic, httpx, mlx-whisper" is a universally useful prior. If you're thinking about building something similar: the stack is mlx-whisper + Claude Haiku + rumps + pynput + pyobjc, and the hardest part is the GPU lock.*
 
-**← Previously:** [My Tests Were Green. My Safety Checks Were Broken. Both Were True at the Same Time.](/posts/11-tests-that-lie/)
-
 **Next up:** Latency was solved. Then I noticed I was still waiting — and remembered a trick from building CPU simulators at AMD. [I Used to Build CPU Simulators at AMD. Twenty Years Later, the Same Trick Made My Dictation App Feel Instant. →](/posts/13-mywispr-pipeline/)
