@@ -1,6 +1,6 @@
 ---
 title: "Good Code (Arguable), Wrong Assumptions"
-date: 2026-04-09T22:00:00-07:00
+date: 2026-04-09T21:00:00-07:00
 category: "geek"
 series: "finbot"
 draft: false
