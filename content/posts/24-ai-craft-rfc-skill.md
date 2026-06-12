@@ -80,27 +80,27 @@ Here's the format, rendered the way it actually looks:
 </tr>
 <tr>
 <td style="background:#BDD7EE;border:1px solid #aaa;padding:8px;font-weight:bold;">Latency</td>
-<td style="background:#FCE4D6;border:1px solid #aaa;padding:8px;">🔴 (−) Seconds of lag</td>
-<td style="background:#E2EFDA;border:1px solid #aaa;padding:8px;">🟢 (+) Real-time</td>
-<td style="background:#E2EFDA;border:1px solid #aaa;padding:8px;">🟢 (+) Real-time</td>
+<td style="background:#FCE4D6;border:1px solid #aaa;padding:8px;">(−) Seconds of lag</td>
+<td style="background:#E2EFDA;border:1px solid #aaa;padding:8px;">(+) Real-time</td>
+<td style="background:#E2EFDA;border:1px solid #aaa;padding:8px;">(+) Real-time</td>
 </tr>
 <tr>
 <td style="background:#BDD7EE;border:1px solid #aaa;padding:8px;font-weight:bold;">Complexity</td>
-<td style="background:#E2EFDA;border:1px solid #aaa;padding:8px;">🟢 (+) Trivial</td>
-<td style="background:#FCE4D6;border:1px solid #aaa;padding:8px;">🔴 (−) Connection state to manage</td>
-<td style="background:#FFF2CC;border:1px solid #aaa;padding:8px;">🟡 (=) SDK, but a dependency</td>
+<td style="background:#E2EFDA;border:1px solid #aaa;padding:8px;">(+) Trivial</td>
+<td style="background:#FCE4D6;border:1px solid #aaa;padding:8px;">(−) Connection state to manage</td>
+<td style="background:#FFF2CC;border:1px solid #aaa;padding:8px;">(=) SDK, but a dependency</td>
 </tr>
 <tr>
 <td style="background:#BDD7EE;border:1px solid #aaa;padding:8px;font-weight:bold;">Scalability</td>
-<td style="background:#FCE4D6;border:1px solid #aaa;padding:8px;">🔴 (−) Wasteful at scale</td>
-<td style="background:#FFF2CC;border:1px solid #aaa;padding:8px;">🟡 (=) Needs careful infra</td>
-<td style="background:#E2EFDA;border:1px solid #aaa;padding:8px;">🟢 (+) Their problem, not yours</td>
+<td style="background:#FCE4D6;border:1px solid #aaa;padding:8px;">(−) Wasteful at scale</td>
+<td style="background:#FFF2CC;border:1px solid #aaa;padding:8px;">(=) Needs careful infra</td>
+<td style="background:#E2EFDA;border:1px solid #aaa;padding:8px;">(+) Their problem, not yours</td>
 </tr>
 <tr>
 <td style="background:#BDD7EE;border:1px solid #aaa;padding:8px;font-weight:bold;">Reversibility</td>
-<td style="background:#E2EFDA;border:1px solid #aaa;padding:8px;">🟢 (+) Easy to rip out</td>
-<td style="background:#FFF2CC;border:1px solid #aaa;padding:8px;">🟡 (=) Moderate</td>
-<td style="background:#FFF2CC;border:1px solid #aaa;padding:8px;">🟡 (=) Vendor lock, but exit-able</td>
+<td style="background:#E2EFDA;border:1px solid #aaa;padding:8px;">(+) Easy to rip out</td>
+<td style="background:#FFF2CC;border:1px solid #aaa;padding:8px;">(=) Moderate</td>
+<td style="background:#FFF2CC;border:1px solid #aaa;padding:8px;">(=) Vendor lock, but exit-able</td>
 </tr>
 </table>
 
